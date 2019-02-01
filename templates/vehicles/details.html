@@ -1,0 +1,18 @@
+{% extends 'vehicles/base.html' %}
+
+{% block content %}
+	<h3 class="center-align">{{vehicle.year}} {{vehicle.make}} </h3>
+	<div class="card">
+		<div class="card-content">
+			{{vehicle.model}}
+		</div>
+		<div class="card-action">
+			{{vehicle.created_at}}
+		</div>
+	</div>
+	<a href="/vehicles" class="btn">Go Back</a>
+{% endblock %}
+
+
+
+
